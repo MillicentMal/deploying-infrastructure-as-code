@@ -334,6 +334,13 @@ Outputs:
         Value: !Ref udagramPublicSubnet2
         Export:
           Name: !Sub ${EnvironmentName}-PublicSub2
+    
+    LoadBalancerUrl:
+        Description: Returning the url of the load balancer for testing
+        Value: !GetAtt LoadBalancer.DNSName
+        Export:
+          testURL: !GetAtt LoadBalancer.DNSName
+
 
 
 # Sample UserData
