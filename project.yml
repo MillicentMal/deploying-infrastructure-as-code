@@ -31,9 +31,6 @@ Parameters:
       Type: String
       Default: 10.0.3.0/24
 
-  key:
-      Description: Key to be used for Launch configuration
-      Type: String
 
 
 
@@ -246,7 +243,6 @@ Resources:
       
       ImageId: ami-0729e439b6769d6ab
      
-      KeyName: !Ref key
       SecurityGroups: [!Ref "ServerSecurityGroup" , !Ref "LoadBalancerSecurityGroup"]
       InstanceType: t3.small
       BlockDeviceMappings:
