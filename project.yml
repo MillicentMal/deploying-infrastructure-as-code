@@ -241,7 +241,7 @@ Resources:
       
       ImageId: ami-0729e439b6769d6ab
      
-      KeyName: jumpbox
+      KeyName: key
       SecurityGroups: [!Ref "ServerSecurityGroup" , !Ref "LoadBalancerSecurityGroup"]
       InstanceType: t3.small
       BlockDeviceMappings:
